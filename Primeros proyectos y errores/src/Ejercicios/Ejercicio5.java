@@ -29,6 +29,7 @@ public class Ejercicio5 {
 		
 		
 		
+		
 		tiempo=(peso*1.048576)/velocidad;
 		
 		System.out.println("El tiempo que tarda en transmitirlo es: " +tiempo+ " Segundos");
