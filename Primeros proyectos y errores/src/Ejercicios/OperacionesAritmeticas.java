@@ -37,6 +37,7 @@ public class OperacionesAritmeticas {
 		
 		System.out.println("El resultado es " + ((13*3)%10));
 		
+		
 		System.out.println("El resultado es " + ((Math.pow(Math.pow(2, 3), 3))));
 		
 		
