@@ -61,8 +61,8 @@ public class Coche {
 		aleron1= new Rectangle(90,60,5,20);
 		aleron1.draw();
 		
-		rectangulo.setColor(Color.GREEN); //coloreo el borde
-		rectangulo.fill();  //coloreo el cacharro entero
+		rectangulo.setColor(Color.GREEN); //pinto el borde
+		rectangulo.fill();  //pinto el fondo
 		
 		ventanas.setColor(Color.GREEN);
 		ventanas.fill();
