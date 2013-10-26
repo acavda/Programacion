@@ -73,7 +73,7 @@ public class Coche {
 		ruedas2.setColor(Color.BLACK);
 		ruedas2.fill();
 		
-		luz.setColor(Color.CYAN);
+		luz.setColor(Color.YELLOW);
 		luz.fill();
 		
 		luz2.setColor(Color.RED);
