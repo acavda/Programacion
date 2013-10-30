@@ -24,9 +24,29 @@ public class Semaforo {
 		
 		rectangulo.draw();
 		
-		rectangulo.setColor(Color.BLACK);
+		rectangulo.setColor(Color.DARK_GRAY);
 		rectangulo.fill();
+
+		circulo = new Ellipse(50,50,50,50);
 		
+		circulo.draw();
+		
+		circulo.setColor(Color.BLACK);
+		circulo.fill();
+		
+		
+		
+		circulo = new Ellipse(50,150,50,50);
+		
+		circulo.draw();
+		circulo.setColor(Color.BLACK);
+		circulo.fill();
+		
+		circulo = new Ellipse(50,250,50,50);
+		
+		circulo.draw();
+		circulo.setColor(Color.BLACK);
+		circulo.fill();
 		
 		
 		Thread.sleep(1000);
@@ -54,7 +74,7 @@ public class Semaforo {
 		circulo = new Ellipse(50,150,50,50);
 		
 		circulo.draw();
-		circulo.setColor(Color.YELLOW);
+		circulo.setColor(Color.ORANGE);
 		circulo.fill();
 		
 		Thread.sleep(1000);
