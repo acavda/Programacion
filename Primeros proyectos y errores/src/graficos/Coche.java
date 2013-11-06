@@ -1,17 +1,24 @@
 package graficos;
 
+import java.util.Scanner;
+
 import graphics.Canvas;
 import graphics.Rectangle;
 import graphics.Color;
 import graphics.Line;
 import graphics.Ellipse;
+import graphics.Text;
 
 public class Coche {
 
         public static void main(String[] args) throws InterruptedException {
                 // TODO Auto-generated method stub
 
+        	
         
+        		
+        	
+        	
                 int x=0;
                 
                 Canvas lienzo;
@@ -27,6 +34,18 @@ public class Coche {
                 Ellipse ruedas2;
                 lienzo = Canvas.getInstance();
                 Line suelo;
+                Text texto;
+                
+                
+               
+                	
+                	
+                	
+                
+                
+                texto = new Text (500,20,"¡¡¡GO!!!");
+                texto.draw();
+                
                 
                 suelo = new Line(10,160,1000,160);
                 suelo.draw();
@@ -91,7 +110,7 @@ public class Coche {
                 aleron1.setColor(Color.BLACK);
                 aleron1.fill();
                 
-                while (85==85) {
+                while (true) {
                         while (x<130) {
                                 
                                 Thread.sleep(10);

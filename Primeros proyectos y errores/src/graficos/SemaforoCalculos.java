@@ -6,7 +6,7 @@ import graphics.Ellipse;
 import graphics.Rectangle;
 import graphics.Text;
 
-public class Semaforo {
+public class SemaforoCalculos {
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -15,20 +15,29 @@ public class Semaforo {
 		Ellipse circulo;
 		Rectangle rectangulo;
 		Text  texto;
-	
+		int ancho,alto,centrox,centroy,diametrodisco,altoposte,anchoposte;
+		
+		altoposte=500;
+		ancho=(altoposte/10);
+		alto=(altoposte/10);
+		centrox=300;
+		centroy=300;
+		diametrodisco=ancho/2;
+		
+		anchoposte=altoposte/9;
 		
 		texto = new Text(130,100,"Semáforo 3.0");
 		texto.draw();
 		lienzo = Canvas.getInstance();
 		
-		rectangulo = new Rectangle(48,35,55,500);
+		rectangulo = new Rectangle(48,35,anchoposte,altoposte);
 		
 		rectangulo.draw();
 		
 		rectangulo.setColor(Color.DARK_GRAY);
 		rectangulo.fill();
 
-		circulo = new Ellipse(50,50,50,50);
+		circulo = new Ellipse(50,50,ancho,alto);
 		
 		circulo.draw();
 		
@@ -37,13 +46,13 @@ public class Semaforo {
 		
 		
 		
-		circulo = new Ellipse(50,150,50,50);
+		circulo = new Ellipse(50,150,ancho,alto);
 		
 		circulo.draw();
 		circulo.setColor(Color.BLACK);
 		circulo.fill();
 		
-		circulo = new Ellipse(50,250,50,50);
+		circulo = new Ellipse(50,250,ancho,alto);
 		
 		circulo.draw();
 		circulo.setColor(Color.BLACK);
@@ -52,7 +61,7 @@ public class Semaforo {
 		
 		Thread.sleep(1000);
 		
-		circulo = new Ellipse(50,50,50,50);
+		circulo = new Ellipse(50,50,ancho,alto);
 		
 		circulo.draw();
 		
@@ -61,7 +70,7 @@ public class Semaforo {
 		
 		Thread.sleep(1000);
 		
-		circulo = new Ellipse(50,50,50,50);
+		circulo = new Ellipse(50,50,ancho,alto);
 		
 		circulo.draw();
 		
@@ -72,7 +81,7 @@ public class Semaforo {
 		
 		Thread.sleep(1000);
 		
-		circulo = new Ellipse(50,150,50,50);
+		circulo = new Ellipse(50,150,ancho,alto);
 		
 		circulo.draw();
 		circulo.setColor(Color.ORANGE);
@@ -80,7 +89,7 @@ public class Semaforo {
 		
 		Thread.sleep(1000);
 		
-		circulo = new Ellipse(50,150,50,50);
+		circulo = new Ellipse(50,150,ancho,alto);
 		
 		circulo.draw();
 		circulo.setColor(Color.BLACK);
@@ -90,7 +99,7 @@ public class Semaforo {
 		
 		Thread.sleep(1000);
 		
-		circulo = new Ellipse(50,250,50,50);
+		circulo = new Ellipse(50,250,ancho,alto);
 		
 		circulo.draw();
 		circulo.setColor(Color.GREEN);
@@ -98,7 +107,7 @@ public class Semaforo {
 		
 		Thread.sleep(1000);
 		
-		circulo = new Ellipse(50,250,50,50);
+		circulo = new Ellipse(50,250,ancho,alto);
 		
 		circulo.draw();
 		circulo.setColor(Color.BLACK);
@@ -110,15 +119,17 @@ public class Semaforo {
 		
 		
 		while (true){
-		circulo = new Ellipse(50,150,50,50);
+		circulo = new Ellipse(50,150,ancho,alto);
 		circulo.draw();
 		circulo.setColor(Color.ORANGE);
 		circulo.fill();
 		
-		circulo = new Ellipse(50,150,50,50);
+		circulo = new Ellipse(50,150,ancho,alto);
 		circulo.draw();
 		circulo.setColor(Color.BLACK);
 		circulo.fill();
+		
+		
 		
 		
 		}
