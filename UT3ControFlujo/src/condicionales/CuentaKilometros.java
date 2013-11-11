@@ -30,6 +30,7 @@ public class CuentaKilometros {
 		
 		
 		
+
 		autonomia=(tamaño*porcentaje)/consumo;
 		
 		if(autonomia<30){

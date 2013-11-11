@@ -21,7 +21,7 @@ public class TiendaRebajas {
 				System.out.println("El precio rebajado es: " + (preciodado-(preciodado*0.1))+"€");
 				System.out.println("Se le aplica un 10% de descuento, por compras inferiores a 20€");
 			
-			
+				
 				}else if(preciodado>=20 && preciodado<50){
 					System.out.println("El precio rebajado es: " +(preciodado-(preciodado*0.2))+"€");
 					System.out.println("Se le aplica un 20% de descuento, por compras inferiores a 50€");
