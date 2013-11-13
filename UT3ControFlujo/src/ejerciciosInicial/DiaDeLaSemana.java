@@ -45,7 +45,7 @@ public class DiaDeLaSemana {
 			System.out.println("Domingo (Dia del Sol)");
 			break;
 		default:
-			System.out.println("La semana tiene 7 dias tronco");
+			System.out.println("La semana tiene 7 dias");
 			
 			}
 		}		

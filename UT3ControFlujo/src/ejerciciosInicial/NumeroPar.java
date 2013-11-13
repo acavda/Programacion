@@ -10,7 +10,7 @@ public class NumeroPar {
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		System.out.println("Dame el numerco colega:");
+		System.out.println("Dame el numerco:");
 		
 		int numero= teclado.nextInt();
 		

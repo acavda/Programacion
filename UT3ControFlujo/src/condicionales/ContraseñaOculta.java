@@ -24,7 +24,7 @@ public class ContraseñaOculta {
 			System.out.println("Contraseña correcta");
 			
 		}else{
-			System.out.println("Contraseña incorrecta, le quedan tres intentos");
+			System.out.println("Contraseña incorrecta");
 			
 		}
 		
