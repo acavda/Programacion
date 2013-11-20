@@ -15,10 +15,6 @@ public class NumeroOculto {
 		
 		numerodado=teclado.nextInt();
 		
-		
-		
-		
-		
 		numeroculto=(int)(Math.random()*10);
 		
 		
