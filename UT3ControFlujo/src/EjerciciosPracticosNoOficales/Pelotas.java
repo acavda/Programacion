@@ -44,10 +44,7 @@ public class Pelotas {
 		Rectangle fondo4 = new Rectangle(2,2,400,500);
 		fondo4.draw();
 		
-		
-		
-		
-		
+
 		
 		Text oasis = new Text(190,200,"PUB");
 		oasis.draw();
@@ -94,10 +91,6 @@ public class Pelotas {
 		hoyo6.setColor(color2);
 		hoyo6.fill();
 		
-		
-		
-		
-		
 		Ellipse pelota1= new Ellipse(200,50,tamañopelota,tamañopelota);
 		pelota1.draw();
 		pelota1.setColor(Color.ORANGE);
@@ -132,6 +125,15 @@ public class Pelotas {
 		pelota7.draw();
 		pelota7.setColor(Color.BLACK);
 		pelota7.fill();
+		
+		Ellipse pelota71= new Ellipse(205,75,tamañopelota-10,tamañopelota-10);
+		pelota71.draw();
+		pelota71.setColor(Color.WHITE);
+		pelota71.fill();
+		
+		Text ocho = new Text(207,72,"8");
+		ocho.draw();
+		
 		
 		Ellipse pelota8= new Ellipse(200,400,tamañopelota-5,tamañopelota-5);
 		pelota8.draw();
@@ -180,6 +182,8 @@ public class Pelotas {
 			pelota5.translate(movx5, movy5);
 			pelota6.translate(movx6, movy6);
 			pelota7.translate(movx7, movy7);
+			pelota71.translate(movx7, movy7);
+			ocho.translate(movx7, movy7);
 			pelota8.translate(movx8, movy8);
 			
 			if ((pelota1.getX()+tamañopelota+1 > 400) || pelota1.getX() < 0)//+tamañopelota con eso cuadra
