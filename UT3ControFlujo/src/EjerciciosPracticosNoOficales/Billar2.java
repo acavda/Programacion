@@ -14,11 +14,10 @@ public class Billar2 {
 	public static void main(String[] args) throws InterruptedException {
 		Scanner teclado = new Scanner(System.in);
 
-		int tamañopelota = 20, movx = (int) (Math.random() * 4 + 1), movy = (int) (Math
-				.random() * 3 + 2);
+		int tamañopelota = 20, movx = (int) (Math.random() * 4 + 1), movy = (int) (Math.random() * 3 + 2);
 
 		int minx = 300, miny = 50, max = 400, maxy = 550;
-		String respuesta;
+		
 
 		double movx2 = (Math.random() * 5), movy2 = (Math.random() * 3 + 2);
 		double movx3 = (Math.random() * 4 + 1), movy3 = (Math.random() * 3 + 2);
@@ -60,6 +59,8 @@ public class Billar2 {
 		botellas4.translate(max + minx + 50, maxy / 2 + 30);
 		botellas4.draw();
 
+		
+		
 		/*
 		 * Rectangle fondo = new Rectangle(minx,miny,max,maxy); fondo.draw();
 		 * fondo.setColor(color); fondo.fill();
@@ -131,12 +132,26 @@ public class Billar2 {
 		ppalo.setColor(Color.BLACK);
 		ppalo.fill();
 
-		System.out.println("Instrucciones: pulsar el mouse");
+		
+		Text instrucciones = new Text(max / 2 + minx-40, miny*4,"Instrucciones:");
+		instrucciones.draw();
+		instrucciones.setColor(Color.ORANGE);
+		
+		Text instrucciones2 = new Text(max / 2 + minx-50, miny*4+20,"1-Pulsar el mouse");
+		instrucciones2.draw();
+		instrucciones2.setColor(Color.ORANGE);
+		
+		Text instrucciones3 = new Text(max / 2 + minx-60, miny*4+40,"2-Esperar a que las bolas entren");
+		instrucciones3.draw();
+		instrucciones3.setColor(Color.ORANGE);
 
 		
 
 			Canvas c;
 			Canvas.getInstance().waitMouseClick();
+			instrucciones.undraw();
+			instrucciones2.undraw();
+			instrucciones3.undraw();
 
 			for (int i = 0; i < 10; i++) {
 
@@ -175,15 +190,22 @@ public class Billar2 {
 			movx8 = -movx8;
 			movy8 = -movy8;
 
-			Color coloroff = new Color(98, 166, 111);
 
 			boolean p1 = true, p2 = true, p3 = true, p4 = true, p5 = true, p6 = true, p7 = true, p8 = true;
+			/*p1 = false; 
+			p2 = false; 
+			p3 = false; 
+			p4 = false; 
+			p5 = false;
+			p6 = false; 
+			p7 = false;
+			p8 = false;*/
+			
+			
 
-			Text ant = new Text(max / 2 + minx, miny,
-					"Creado por: Antonio Cañete");
+			Text ant = new Text(max / 2 + minx-40, miny,"Creado por: Antonio Cañete");
 
-			Text ant2 = new Text(max / 2 + minx, miny + 60,
-					"Todos los derechos reservados");
+			Text ant2 = new Text(max / 2+minx-40 , miny + 60,"Todos los derechos reservados");
 			ant.grow(40, 10);
 			ant2.grow(40, 10);
 			ant.setColor(Color.RED);
