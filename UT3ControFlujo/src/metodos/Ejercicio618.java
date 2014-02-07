@@ -29,6 +29,7 @@ public class Ejercicio618 {
 		
 		caracter=nombre.charAt(0);
 		
+		
 		Ejercicio618.cuadrado(num,caracter);
 		
 		

@@ -6,8 +6,6 @@ public class Ejercicio623 {
 		float numeromenor=0;
 		
 		numeromenor= Math.min(num1, Math.max(num2, num3));
-		
-		
 		return numeromenor;
 	}
 
